@@ -24,4 +24,20 @@ public class LevelController : MonoBehaviour
             }
         }
     }
+
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0)) Raycast();
+    }
+
+
+    private void Raycast()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+        if(hit)
+        {
+            Debug.Log(hit.collider.name);
+        }
+    }
 }
