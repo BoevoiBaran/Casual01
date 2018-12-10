@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Crystal.cs" />
+    <Compile Include="Assets\Scripts\DestroyParticleSystem.cs" />
     <Compile Include="Assets\Scripts\LevelController.cs" />
     <Compile Include="Assets\Scripts\Tile.cs" />
     <Reference Include="UnityEditor.StandardEvents">
