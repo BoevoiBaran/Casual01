@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212738196442880866}
   - component: {fileID: 58720605540059920}
   - component: {fileID: 95012158156866392}
+  - component: {fileID: 114999380865520374}
   m_Layer: 0
-  m_Name: blueGem-01
-  m_TagString: Untagged
+  m_Name: blueGem01
+  m_TagString: Crystal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75,6 +76,17 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114999380865520374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1561341004997356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cac42c16ea0e024789dfbb47a997ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212738196442880866
 SpriteRenderer:
   m_ObjectHideFlags: 1

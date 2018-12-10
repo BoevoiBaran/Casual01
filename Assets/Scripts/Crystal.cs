@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crystal : MonoBehaviour {
+public class Crystal : MonoBehaviour
+{
+    public void Click()
+    {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        Debug.Log("Click");
+        Destroy(gameObject);
+    }
+
+
 }

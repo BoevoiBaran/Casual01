@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField]private GameObject tile;
+    [SerializeField] private GameObject tile;
 
     [SerializeField] private int levelWidth = 3;
     [SerializeField] private int levelHeight = 5;
-
-    private void Awake()
-    {
-        //ground = Resources.Load<GroundGreen>("GreenGround");
-    }
 
     private void Start()
     {
@@ -28,16 +23,16 @@ public class LevelController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0)) Raycast();
+        if (Input.GetMouseButtonDown(0)) RaycastOnClick();
     }
 
 
-    private void Raycast()
+    private void RaycastOnClick()
     {
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
         if(hit)
         {
-            Debug.Log(hit.collider.name);
+            hit.collider.GetComponent<Crystal>().Click();
         }
     }
 }
