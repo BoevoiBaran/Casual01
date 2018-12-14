@@ -8,7 +8,6 @@ public class Crystal : MonoBehaviour
 
     public void Click()
     {
-
         Debug.Log("Click");
         Instantiate(particleEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
